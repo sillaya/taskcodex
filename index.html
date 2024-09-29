@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">Shop</a>
+            <div class="navicons">
+                <a href="favorites.html">
+                    <i class='bx bxs-heart' id="fav"></i>
+                </a>
+                <a href="cart.html">
+                    <i class='bx bxs-cart' id="cart"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="sectit">Shop Products</h2>
+        <div class="filter">
+            <div class="btnfilt">
+                <button class="filterbtn" onclick="filterProducts('all')">All</button>
+                <button class="filterbtn" onclick="filterProducts('phones')">Phones</button>
+                <button class="filterbtn" onclick="filterProducts('laptops')">Laptops</button>
+                <button class="filterbtn" onclick="filterProducts('tablets')">Tablets</button>
+            </div>
+            <div class="sort">
+                <select id="sort" onchange="sortProducts(this.value)">
+                    <option value="" disabled selected>Sort by Price:</option>
+                    <option value="low">Low to High</option>
+                    <option value="high">High to Low</option>
+                </select>
+            </div>
+        </div>
+        <div class="content" id="productGrid">
+            <div class="prod" data-category="phones">
+                <img src="phones/iphonex.jpg" class="prodimg">
+                <h2 class="prodtit">iPhone X</h2>
+                <span class="price">$250</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="laptops">
+                <img src="laptops/asus.jpg" class="prodimg">
+                <h2 class="prodtit">ASUS Laptop</h2>
+                <span class="price">$1450</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="laptops">
+                <img src="laptops/gigabyte.webp" class="prodimg">
+                <h2 class="prodtit">Gigabyte Laptop</h2>
+                <span class="price">$1700</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="tablets">
+                <img src="tablet/ipad.jpg" class="prodimg">
+                <h2 class="prodtit">iPad</h2>
+                <span class="price">$600</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="phones">
+                <img src="phones/iphone16.avif" class="prodimg">
+                <h2 class="prodtit">iPhone 16</h2>
+                <span class="price">$950</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="phones">
+                <img src="phones/iphone15.jpg" class="prodimg">
+                <h2 class="prodtit">iPhone 15</h2>
+                <span class="price">$800</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="tablets">
+                <img src="tablet/samsung tab.jpg" class="prodimg">
+                <h2 class="prodtit">Samsung Tablet</h2>
+                <span class="price">$450</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="laptops">
+                <img src="laptops/lenovo.webp" class="prodimg">
+                <h2 class="prodtit">LENOVO Laptop</h2>
+                <span class="price">$1050</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav'></i>
+                    <i class='bx bxs-cart addcart'></i>
+                </div>
+            </div>
+            <div class="prod" data-category="laptops">
+                <img src="laptops/msi.webp" class="prodimg">
+                <h2 class="prodtit">MSI Laptop</h2>
+                <span class="price">$2500</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav' ></i>
+                    <i class='bx bxs-cart addcart' ></i>
+                </div>
+            </div>
+            <div class="prod" data-category="phones">
+                <img src="phones/iphone13pro.jpg" class="prodimg">
+                <h2 class="prodtit">iPhone 13 Pro</h2>
+                <span class="price">$700</span>
+                <div class="actions">
+                    <i class='bx bxs-heart addfav' ></i>
+                    <i class='bx bxs-cart addcart' ></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
